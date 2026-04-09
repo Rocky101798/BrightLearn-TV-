@@ -86,3 +86,7 @@ Microsoft Excel
 Power BI / Tableau
 GitHub
 Miro (for data architecture planning)
+
+## Author 
+
+Siphamandla Moyo
