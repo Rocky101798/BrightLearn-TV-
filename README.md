@@ -47,14 +47,14 @@ All timestamps in the dataset are recorded in UTC and must be converted to South
 
 The following steps were performed during data preparation:
 
-# Loaded the dataset into a database environment
-# Converted time values from UTC to South African Standard Time (SAST)
-# Cleaned the dataset and removed invalid records
-# Handled missing or zero-duration sessions
-# Standardized time and date formats
-# Created calculated fields for analysis
-# Prepared the dataset for visualization and reporting
-# Key Calculated Fields
+#### Loaded the dataset into a database environment
+#### Converted time values from UTC to South African Standard Time (SAST)
+#### Cleaned the dataset and removed invalid records
+#### Handled missing or zero-duration sessions
+#### Standardized time and date formats
+#### Created calculated fields for analysis
+#### Prepared the dataset for visualization and reporting
+#### Key Calculated Fields
 
  ## The following calculated fields were created to support analysis:
 
