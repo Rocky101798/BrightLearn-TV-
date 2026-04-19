@@ -47,30 +47,30 @@ All timestamps in the dataset are recorded in UTC and must be converted to South
 
 The following steps were performed during data preparation:
 
-#### Loaded the dataset into a database environment
-#### Converted time values from UTC to South African Standard Time (SAST)
-#### Cleaned the dataset and removed invalid records
-#### Handled missing or zero-duration sessions
-#### Standardized time and date formats
-#### Created calculated fields for analysis
-#### Prepared the dataset for visualization and reporting
-#### Key Calculated Fields
+- Loaded the dataset into a database environment
+- Converted time values from UTC to South African Standard Time (SAST)
+- Cleaned the dataset and removed invalid records
+- Handled missing or zero-duration sessions
+- Standardized time and date formats
+- Created calculated fields for analysis
+- Prepared the dataset for visualization and reporting
+- Key Calculated Fields
 
  ## The following calculated fields were created to support analysis:
 
-Total Viewing Minutes
+- Total Viewing Minutes
 Duration in Minutes = TIME_TO_SEC(Duration) / 60
 
-Total Viewing Hours
+- Total Viewing Hours
 Duration in Hours = TIME_TO_SEC(Duration) / 3600
 
-Session Count
+- Session Count
 Number of viewing sessions per user
 
-Average Viewing Time
+- Average Viewing Time
 Average duration per session
 
-Unique Viewers
+- Unique Viewers
 Number of distinct users
 
 Peak Viewing Period
@@ -80,12 +80,12 @@ These calculations help measure engagement, usage intensity, and viewing trends.
 
 ## Tools and Technologies Used
 
-SQL
-Databricks
-Microsoft Excel
-PowerPoint for presentation
-GitHub
-Miro (for data architecture planning)
+- SQL
+- Databricks
+- Microsoft Excel
+- PowerPoint for presentation
+- GitHub
+- Miro (for data architecture planning)
 
 ## Author 
 
