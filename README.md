@@ -73,7 +73,7 @@ Average duration per session
 - Unique Viewers
 Number of distinct users
 
-Peak Viewing Period
+- Peak Viewing Period
 Time interval with the highest viewing activity
 
 These calculations help measure engagement, usage intensity, and viewing trends.
