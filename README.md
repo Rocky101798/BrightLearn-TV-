@@ -83,7 +83,7 @@ These calculations help measure engagement, usage intensity, and viewing trends.
 SQL
 Databricks
 Microsoft Excel
-Power BI / Tableau
+PowerPoint for presentation
 GitHub
 Miro (for data architecture planning)
 
