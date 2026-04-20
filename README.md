@@ -86,7 +86,7 @@ These calculations help measure engagement, usage intensity, and viewing trends.
 - PowerPoint for presentation
 - GitHub
 - Miro (for data architecture planning)
-- BrightTV Dashboard: https://siphamandlam.lovable.app
+- BrightTV Dashboard: https://siphamandla.lovable.app
 
 ## Author 
 
