@@ -1,51 +1,40 @@
-# BrightTV Viewership Analytics Assessment
+# BrightTV Viewership Analytics
 
-## BrightTV Viewership Analytics Project
+**Turning raw streaming data into the insights that grow a subscriber base.**
 
-### Project Overview
+## Project Overview
 
-This project analyzes viewer activity data from the BrightTV streaming platform to generate meaningful insights that support business growth and customer engagement.
+BrightTV wants to know one thing above all: *what makes people watch more?*
 
-The main purpose of the analysis is to help the Customer Value Management (CVM) team understand how users interact with the platform, identify viewing patterns, and recommend strategies to increase content consumption and grow the subscription base.
+This project digs into viewer activity data from the BrightTV streaming platform to answer that question — surfacing the patterns behind how, when, and why users engage with content. The goal is to give the Customer Value Management (CVM) team a clear, data-backed view of viewing behavior so they can boost engagement and grow the subscription base.
 
-The dataset contains user profile information and detailed viewing session records, where each record represents a single viewing session. The analysis focuses on measuring user behavior, viewing duration, and content engagement across different time periods.
-
-According to the case study, the CEO's goal is to grow the company’s subscription base and increase platform usage, and this analysis supports that objective by identifying trends and opportunities in viewership data.
+Each record in the dataset represents a single viewing session, capturing user behavior, viewing duration, and content engagement across different time periods. Per the case study, the CEO's mandate is clear: grow subscribers, grow usage. This analysis is built to support exactly that.
 
 ## Project Objectives
 
-The main objectives of this project are:
+- Analyze user viewing behavior and engagement patterns
+- Measure total viewing time and session activity
+- Identify peak and low consumption periods
+- Determine what factors drive (or kill) content consumption
+- Recommend content strategies to increase usage
+- Surface insights that support subscriber growth
+- Enable data-driven decision-making for management
 
-Analyze user viewing behavior and engagement patterns
-Measure total viewing time and session activity
-Identify peak and low consumption periods
-Determine factors that influence content consumption
-Recommend content strategies to increase usage
-Provide insights that support subscriber growth
-Support data-driven decision-making for management
-Dataset Description
+## Dataset Description
 
-The BrightTV dataset contains information about users and their viewing sessions on the streaming platform.
+The BrightTV dataset captures users and their viewing sessions on the platform. Each row = one viewing session, including:
 
-Each row in the dataset represents a single viewing session.
+- User ID
+- Session duration
+- Content title or category
+- Viewing date and time
+- Device or platform information
+- User profile details
+- Viewing activity records
 
-The dataset includes:
+> **Note:** All timestamps are recorded in UTC and must be converted to South African time for accurate analysis.
 
-User ID
-Session duration
-Content title or category
-Viewing date and time
-Device or platform information
-User profile details
-Viewing activity records
-
-Important note:
-
-All timestamps in the dataset are recorded in UTC and must be converted to South African time for accurate analysis.
-
- ## Data Processing Steps
-
-The following steps were performed during data preparation:
+## Data Processing Steps
 
 - Loaded the dataset into a database environment
 - Converted time values from UTC to South African Standard Time (SAST)
@@ -54,40 +43,30 @@ The following steps were performed during data preparation:
 - Standardized time and date formats
 - Created calculated fields for analysis
 - Prepared the dataset for visualization and reporting
-- Key Calculated Fields
 
- ## The following calculated fields were created to support analysis:
+## Key Calculated Fields
 
-- Total Viewing Minutes
-Duration in Minutes = TIME_TO_SEC(Duration) / 60
+| Metric | Formula / Definition |
+|---|---|
+| Total Viewing Minutes | `TIME_TO_SEC(Duration) / 60` |
+| Total Viewing Hours | `TIME_TO_SEC(Duration) / 3600` |
+| Session Count | Number of viewing sessions per user |
+| Average Viewing Time | Average duration per session |
+| Unique Viewers | Number of distinct users |
+| Peak Viewing Period | Time interval with the highest viewing activity |
 
-- Total Viewing Hours
-Duration in Hours = TIME_TO_SEC(Duration) / 3600
-
-- Session Count
-Number of viewing sessions per user
-
-- Average Viewing Time
-Average duration per session
-
-- Unique Viewers
-Number of distinct users
-
-- Peak Viewing Period
-Time interval with the highest viewing activity
-
-These calculations help measure engagement, usage intensity, and viewing trends.
+These calculations power the engagement, usage-intensity, and trend analysis behind every insight in this project.
 
 ## Tools and Technologies Used
 
 - SQL
 - Databricks
 - Microsoft Excel
-- PowerPoint for presentation
+- PowerPoint (presentation)
 - GitHub
-- Miro (for data architecture planning)
-- BrightTV Dashboard: [https://siphamandla.lovable.app](https://siphamandla.lovable.app)
+- Miro (data architecture planning)
+- **Live Dashboard:** [BrightTV Dashboard](https://siphamandla.lovable.app)
 
-## Author 
+## Author
 
-Siphamandla Moyo
+**Siphamandla Moyo**
